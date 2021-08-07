@@ -103,6 +103,19 @@ const layouts = {
     </el-row>`
     str = colWrapper(element, str)
     return str
+  },
+  // 搜索组件
+  searchBox(element){
+    const type = element.type === 'default' ? '' : `type="${element.type}"`
+    const justify = element.type === 'default' ? '' : `justify="${element.justify}"`
+    const align = element.type === 'default' ? '' : `align="${element.align}"`
+    const gutter = element.gutter ? `gutter="${element.gutter}"` : ''
+    const children = element.children.map(el => layouts[el.layout](el))
+    let str = `<el-row ${type} ${justify} ${align} ${gutter}>
+      ${children.join('\n')}
+    </el-row>`
+    str = colWrapper(element, str)
+    return str
   }
 }
 

@@ -337,36 +337,41 @@ export const beautifierConf = {
     preserve_newlines: false,
     keep_array_indentation: false,
     break_chained_methods: false,
-    indent_scripts: 'separate',
-    brace_style: 'end-expand',
+    indent_scripts: 'normal',
+    brace_style: 'expand',
     space_before_conditional: true,
     unescape_strings: false,
     jslint_happy: false,
-    end_with_newline: true,
+    end_with_newline: false,
+    start_with_newline: false,
     wrap_line_length: '110',
     indent_inner_html: true,
     comma_first: false,
     e4x: true,
-    indent_empty_lines: true
+    indent_empty_lines: true,
+    indent_with_tabs: true, //使用tab缩进
   },
   js: {
     indent_size: '2',
+    indent_style: 'space',
     indent_char: ' ',
     max_preserve_newlines: '-1',
     preserve_newlines: false,
-    keep_array_indentation: false,
     break_chained_methods: false,
     indent_scripts: 'normal',
-    brace_style: 'end-expand',
+    brace_style: 'expand',
     space_before_conditional: true,
     unescape_strings: false,
-    jslint_happy: true,
-    end_with_newline: true,
+    jslint_happy: false,
+    end_with_newline: false,
     wrap_line_length: '110',
     indent_inner_html: true,
     comma_first: false,
     e4x: true,
-    indent_empty_lines: true
+    indent_empty_lines: true,
+    keep_array_indentation: true, //保持数组缩进
+    indent_with_tabs: true, //使用tab缩进
+    indent_level: 3, //起始代码缩进数
   }
 }
 

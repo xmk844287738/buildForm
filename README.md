@@ -1,3 +1,5 @@
+> Fork https://github.com/lizheng0515/buildForm.git 
+
 # 表单构建（偷懒必备，生成你想要的表单）
 
 ## 基于Vue + Element的表单构建组件
